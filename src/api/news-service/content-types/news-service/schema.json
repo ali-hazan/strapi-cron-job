@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_services",
+  "info": {
+    "singularName": "news-service",
+    "pluralName": "news-services",
+    "displayName": "News Service"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

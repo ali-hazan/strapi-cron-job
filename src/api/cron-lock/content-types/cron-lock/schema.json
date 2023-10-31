@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cron_locks",
+  "info": {
+    "singularName": "cron-lock",
+    "pluralName": "cron-locks",
+    "displayName": "Cron Lock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "job_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "locked": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "locked_at": {
+      "type": "datetime"
+    },
+    "instance": {
+      "type": "string"
+    }
+  }
+}
